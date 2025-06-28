@@ -20,7 +20,7 @@ contract SimpleBank {
         payable(msg.sender).transfer(amount);
     }
 
-    function getBlance() public view returns(uint256) {
+    function getBalance() public view returns(uint256) {
         return balances[msg.sender];
     }
 
